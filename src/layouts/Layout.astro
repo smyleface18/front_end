@@ -1,4 +1,6 @@
 ---
+import { Icon } from 'astro-icon/components';
+
 interface Props {
 	title: string;
 }
@@ -33,9 +35,47 @@ const products = [
 		<title>{title}</title>
 	</head>
 	<body>
-		<div class="header">
+		<div class="bg-black  " >
+			<div class= "flex items-center">
+				<img class="h-[61px]" src="/public/logo_aliexpress.webp" alt="logo aliexpress"> 
+				<div class=" relative w-3/6">
+					<input type="search" placeholder="Buscar..." class="h-9 rounded-full pl-5 outline-none pr-12 w-full">
+					<div class="bg-black right-1 top-[2px] absolute inline-block text-white rounded-2xl py-1 px-2">
+						<Icon name="mdi:search"  class="size-6"/>
+					</div>
+				</div>
+
+				<div class="text-white flex p-0 m-0 ml-8" >
+					<Icon name="mdi:qrcode"  class="size-8" />
+					<div class="text-xs ml-2">
+						<p >Descarga la app</p>
+						<p>de AliExpress</p>	
+					</div>
+				</div>
+
+				<div class="text-white ml-8">
+					<Icon name="mdi:person-outline" />
+					<div>
+						<p>!Bienvenido</p>
+						<div class="flex">
+							<b>Iddentificate/ registrate</b>
+							<Icon name="mdi:arrow-down-drop" />
+						</div>
+					</div>
+				</div>
+
+				<div class="text-white  ml-8 flex">
+					<Icon name="mdi:cart-outline"  class="size-8"/>
+					<div>
+						<div class="bg-white h-4 flex items-center justify-center rounded-xl text-xs w-6">
+							<b class="text-black">0</b>
+						</div>
+						<b class="  text-[13px]">Cesta</b>
+					</div>
+				</div>
+			</div>
 			<div class="container header_info">
-				Contenido de la cabecera
+				
 			</div>
 		</div>
 		<div class="container banner">
@@ -93,11 +133,7 @@ const products = [
 	.header_info{
 		height: 80px;
 	}
-	.container{
-		width: 50vw;
-		margin: 0 auto;
-		/*background-color: aqua;*/
-	}
+
 	.banner{
 		height: 240px;
 		background-color: rgb(255, 255, 255) !important;

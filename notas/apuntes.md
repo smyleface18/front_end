@@ -28,3 +28,13 @@ copiar codigo
 ´´´
 
 como documentar https://www.youtube.com/watch?v=9Om7ijj_Atg
+
+para poder valores arbitrarios vamos hacer lo siguiene 
+
+
+				<img class="h-[61px]" src="/public/logo_aliexpress.webp" alt="logo aliexpress"> 
+
+* taildwind 
+* Material Design Icons
+* interger packg en la pagina oficial en astro
+
