@@ -1,0 +1,57 @@
+---
+interface Props {
+    text : String;
+
+}
+const {text} =Astro.props
+---
+
+
+<div class="container_select">
+    <div id="ExpansiveCard" class="rounded-full text-white h-8 hover:bg-[#4A4A4A] flex items-center p-5 text-[17px] w-full justify-center " >
+        <h4>{text}</h4>
+        <slot id="element_expansive" class="h-0"></slot>
+    </div>
+</div>
+
+
+
+<style>
+.container_select{
+    position: relative;
+    width: 300px;
+}
+
+.select{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    height: 500px;
+    border-radius: 10px;
+    align-items: start;
+
+}
+</style>
+
+<script>
+    const element = document.querySelector("#ExpansiveCard");
+    const element_expansive = document.querySelector("#element_expansive")
+
+
+    element.addEventListener("mouseover", () => 
+
+        element_expansive.classList.toggle("select")
+
+    );
+
+
+    element.addEventListener("mouseout", () => 
+
+     element_expansive.classList.toggle("select")
+
+    );
+
+    console.log(element);
+
+</script>
+

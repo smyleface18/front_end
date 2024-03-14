@@ -1,6 +1,7 @@
 ---
 import { Icon } from 'astro-icon/components';
 import Optionsmenu from '../components/Optionsmenu.astro'
+import ExpansiveCard from '../components/ExpansiveCard.astro';
 
 interface Props {
 	title: string;
@@ -77,6 +78,19 @@ const products = [
 			</div>
 			<div class=" w-screen bg-black h-[70px] flex ">
 				<ul class=" flex justify-around w-full items-center h-full">
+					<ExpansiveCard text={"menu expansible"}>
+						<ul>
+							<li>
+								opcion 1
+							</li>
+							<li>
+								opcion 2
+							</li>
+							<li>
+								option 3
+							</li>
+						</ul>
+					</ExpansiveCard>
 					<Optionsmenu href={"#"} text={"Option 1"}></Optionsmenu>
 					<Optionsmenu href={"#"} text={"Option 1"}></Optionsmenu>
 					<Optionsmenu href={"#"} text={"Option 1"}></Optionsmenu>
@@ -86,7 +100,7 @@ const products = [
 			</div>
 		</div>
 		<div class="container banner">
-			BANNER
+
 		</div>
 		<nav class="container main_menu" >
 			<a href="/">Inicio</a>  <a href="/productos">Productos</a>
