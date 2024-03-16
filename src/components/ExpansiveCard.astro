@@ -7,28 +7,27 @@ const {text} =Astro.props
 ---
 
 
-<div class="container_select">
-    <div id="ExpansiveCard" class="rounded-full text-white h-8 hover:bg-[#4A4A4A] flex items-center p-5 text-[17px] w-full justify-center " >
-        <h4>{text}</h4>
-        <slot id="element_expansive" class="h-0"></slot>
+<div class="relative w-52 h-full">
+    <div id="ExpansiveCard" class="rounded-2xl text-white h-full w-full  hover:bg-[#fbf5f5]  items-start p-5 text-[17px]  
+    justify-center flex-col hover:text-black hover:h-96 absolute hover:overflow-y-auto" >
+
+        <h4 class="w-full h-8 flex items-center mt-0">{text}</h4>
+
+       <div id="element_expansive" class="select" class="flex flex-col h-full w-full hover:h-32 ">
+            <slot  class=""></slot>
+        </div>
+
     </div>
 </div>
 
 
 
 <style>
-.container_select{
-    position: relative;
-    width: 300px;
-}
+
 
 .select{
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-    color: black;
-    height: 500px;
-    border-radius: 10px;
-    align-items: start;
+ display:none;
+
 
 }
 </style>
