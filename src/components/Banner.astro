@@ -1,0 +1,11 @@
+---
+interface Props {
+    url : String;
+}
+
+const {url} = Astro.props
+---
+
+<div class="w-[100vw] flex justify-center">
+    <img src={url} alt="Banner Aliexpress" class="w-[80%] pt-6" >
+</div>

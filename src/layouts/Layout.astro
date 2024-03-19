@@ -137,25 +137,6 @@ const products = [
 				</ul>
 			</div>
 		</div>
-		<div class="container banner">
-
-		</div>
-		<nav class="container main_menu" >
-			<a href="/">Inicio</a>  <a href="/productos">Productos</a>
-		</nav>
-		<div class="container product_list">
-			{
-				products.map((product) => <div>
-										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M12 5c-7.633 0-9.927 6.617-9.948 6.684L1.946 12l.105.316C2.073 12.383 4.367 19 12 19s9.927-6.617 9.948-6.684l.106-.316-.105-.316C21.927 11.617 19.633 5 12 5zm0 11c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4z"></path><path d="M12 10c-1.084 0-2 .916-2 2s.916 2 2 2 2-.916 2-2-.916-2-2-2z"></path></svg>
-										{product.name}
-										</div>
-			)
-			}
-
-		</div>
-		<div class="container categories">
-			CATEGORIAS
-		</div>
 		<div class="container">
 			<slot />
 		</div>
@@ -165,59 +146,9 @@ const products = [
 	</body>
 </html>
 <style is:global>
-	.main_menu{
-		display: flex;
-		background-color: rgb(170, 101, 235);
-		align-items: center;
-		height: 40px;
-	}
-	.main_menu a:hover{
-		background-color: rgb(255, 255, 255);
-		color: blueviolet;
-	}
-	.main_menu a {
-		transition: background 400ms ease-in-out;
-		height: 100%;
-		padding: 0 10px;
-		display: flex;
-		align-items: center;
-		text-decoration: none;
-		color:#fff;
-		font-weight:bold;
-	}
-	.header{
-		background-color: rgb(250, 100, 0);
-
-	}
-
-	.banner{
-		height: 240px;
-		background-color: rgb(255, 255, 255) !important;
-	}
-	.product_list{
-		height: 80px;
-		display: flex;
-	}
-	.product_list div {
-		height: 100%;
-		max-width: 120px;
-		border: 1px solid grey;
-		border-radius: 5px;
-		margin-right: 5px; 
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-	.categories{
-		height: 80px;
-	}
-	.footer{
-		height: 80px;
-		margin-top: 50px;
-	}
 	
 	html, body {
+		overflow-x: hidden;
 		margin:0;
 		font-family: system-ui, sans-serif;
 	}
