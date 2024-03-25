@@ -1,18 +1,23 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Banner from '../components/Banner.astro';
+import { Icon } from 'astro-icon/components';
 //import Card from '../components/Card.astro';
 ---
 
 <Layout title="Aliexpress clone">
 	<Banner url={"/public/img/banner.webp"} ></Banner>
 	
-	<div class="flex flex-row h-[60vh] w-[100vw] m-0 p-0 bg-slate-600" >
+	<div class="flex flex-row h-[60vh] w-[100vw] m-0 p-0 bg-[#fe2c4c] justify-center" >
 		<div class= "h-full w-3/6 flex flex-col justify-center">
 			<div class="h-3/6 w-full  flex  justify-center"><h1>texto</h1></div>
-			<div  class="rounded-full  w-full max-w-[450px] flex flex-row bg-orange-400 h-28 items-center pl-3" >
+			<div  class="rounded-full  w-full max-w-[500px] flex flex-row bg-[#fff5b9] h-[120px] items-center pl-3" >
 				<a href="#" class="w-24"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb2UpJXzrtcq_yQwrZSdAdTc1e_v9pF7wXng&usqp=CAU" alt="" class=" rounded-full"></a>
-				<a href="#" class="w-24"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb2UpJXzrtcq_yQwrZSdAdTc1e_v9pF7wXng&usqp=CAU" alt="" class=" rounded-full ml-6"></a></a>				
+				<a href="#" class="w-24"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb2UpJXzrtcq_yQwrZSdAdTc1e_v9pF7wXng&usqp=CAU" alt="" class=" rounded-full ml-6"></a></a>
+				<a href="" class="ml-24 flex flex-row h-full items-center ">
+					<h1 class="text-3xl mb-2 text-[#fe2c4c] bold">Compra </h1> 
+					<Icon name="mdi:arrow-right" class="size-16 "></Icon>
+				</a>				
 			</div>
 		</div>
 		<div>
