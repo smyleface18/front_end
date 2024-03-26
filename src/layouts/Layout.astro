@@ -40,7 +40,7 @@ const products = [
 		<div class="bg-[#191919] w-screen " >
 			<div class= "flex items-center justify-center pt-2">
 				<img class="h-[61px]" src="/public/logo_aliexpress.webp" alt="logo aliexpress"> 
-				<div class=" relative w-3/6 max-w-2xl">
+				<div class=" relative w-[20%] max-w-2xl">
 					<input type="search" placeholder="Buscar..." class="h-9 rounded-full pl-5 outline-none pr-12 w-full ">
 					<div class="bg-black right-1 top-[2px] absolute inline-block text-white rounded-2xl py-1 px-2">
 						<Icon name="mdi:search"  class="size-6"/>
@@ -77,66 +77,83 @@ const products = [
 				</div>
 			</div>
 
-
-			<div class=" w-screen bg-[#191919] h-[70px] flex ">
-				<ul class=" flex justify-center w-full items-center h-full">
-					<ExpansiveCard text={"menu expansible"} >
-						<ul class="">
-							<li>
-								opcion 1
-							</li>
-							<li>
-								opcion 2
-							</li>
-							<li>
-								option 3
-							</li>
-							<li>
-								opcion 1
-							</li>
-							<li>
-								opcion 2
-							</li>
-							<li>
-								option 3
-							</li>
-							<li>
-								opcion 1
-							</li>
-							<li>
-								opcion 2
-							</li>
-							<li>
-								option 3
-							</li>
-							<li>
-								opcion 1
-							</li>
-							<li>
-								opcion 2
-							</li>
-							<li>
-								option 3
-							</li>
-							<li>
-								opcion 1
-							</li>
-							<li>
-								opcion 2
-							</li>
-							<li>
-								option 3
-							</li>
-							
-						</ul>
-					</ExpansiveCard>
-					<Optionsmenu href={"#"} text={"Option 1"}></Optionsmenu>
-					<Optionsmenu href={"#"} text={"Option 1"}></Optionsmenu>
-					<Optionsmenu href={"#"} text={"Option 1"}></Optionsmenu>
-					<Optionsmenu href={"#"} text={"Option 1"}></Optionsmenu>
-					<Optionsmenu href={"#"} text={"Option 1"}></Optionsmenu>
-				</ul>
+            <div class="w-screen  h-[70px] flex justify-center">
+				<div class=" h-full w-4/6 bg-[#191919] flex ">
+					<ul class=" flex justify-between w-full items-center h-full">
+						<ExpansiveCard text={"menu expansible"} >
+							<ul class="">
+								<li >
+									opcion 1
+								</li>
+								<li>
+									opcion 2
+								</li>
+								<li>
+									option 3
+								</li>
+								<li>
+									opcion 1
+								</li>
+								<li>
+									opcion 2
+								</li>
+								<li>
+									option 3
+								</li>
+								<li>
+									opcion 1
+								</li>
+								<li>
+									opcion 2
+								</li>
+								<li>
+									option 3
+								</li>
+								<li>
+									opcion 1
+								</li>
+								<li>
+									opcion 2
+								</li>
+								<li>
+									option 3
+								</li>
+								<li>
+									opcion 1
+								</li>
+								<li>
+									opcion 2
+								</li>
+								<li>
+									option 3
+								</li>
+								
+							</ul>
+						</ExpansiveCard>
+						<Optionsmenu href={"#"}><h1 class="font-bold text-[#fe2c4c]">3 desde 4,49$ US</h1></Optionsmenu>
+						<Optionsmenu href={"#"}><h1>Opcion 1</h1></Optionsmenu>
+						<Optionsmenu href={"#"}><h1>Opcion 2</h1></Optionsmenu>
+						<Optionsmenu href={"#"}><h1>Opcion 3</h1></Optionsmenu>
+						<Optionsmenu href={"#"}><h1>Opcion 4</h1></Optionsmenu>
+						<Optionsmenu href={"#"}><h1>Opcion 5</h1></Optionsmenu>
+						<ExpansiveCard text={"más"} >
+							<ul class="">
+								<li >
+									opcion 1
+								</li>
+								<li>
+									opcion 2
+								</li>
+								<li>
+									option 3
+								</li>
+								
+							</ul>
+						</ExpansiveCard>
+					</ul>
+				</div>           
 			</div>
+
 		</div>
 		<div class="container">
 			<slot />

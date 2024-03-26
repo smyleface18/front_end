@@ -8,17 +8,26 @@ import { Icon } from 'astro-icon/components';
 <Layout title="Aliexpress clone">
 	<Banner url={"/public/img/banner.webp"} ></Banner>
 	
-	<div class="flex flex-row h-[60vh] w-[100vw] m-0 p-0 bg-[#fe2c4c] justify-center" >
-		<div class= "h-full w-3/6 flex flex-col justify-center">
-			<div class="h-3/6 w-full  flex  justify-center"><h1>texto</h1></div>
-			<div  class="rounded-full  w-full max-w-[500px] flex flex-row bg-[#fff5b9] h-[120px] items-center pl-3" >
-				<a href="#" class="w-24"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb2UpJXzrtcq_yQwrZSdAdTc1e_v9pF7wXng&usqp=CAU" alt="" class=" rounded-full"></a>
-				<a href="#" class="w-24"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb2UpJXzrtcq_yQwrZSdAdTc1e_v9pF7wXng&usqp=CAU" alt="" class=" rounded-full ml-6"></a></a>
-				<a href="" class="ml-24 flex flex-row h-full items-center ">
-					<h1 class="text-3xl mb-2 text-[#fe2c4c] bold">Compra </h1> 
-					<Icon name="mdi:arrow-right" class="size-16 "></Icon>
-				</a>				
+	<div class="flex flex-row h-[60vh] w-[100vw] m-0 p-0 bg-[#fe2c4c] " >
+		<div class= "h-full w-3/6 flex flex-col justify-center mr-20">
+			<div class="h-3/6 w-full  flex  justify-center flex-col mb-12">
+				<span class="text-center text-2xl text-white ">La promo termina el dia del parcial</span>
+				<div class="mt-16">
+					<h1 class="text-center text-[#fff5b9] text-6xl font-bold">Hasta -70% dto.</h1>
+					<h3 class="text-center text-white text-2xl font-bold">Última oportunidad para obtener cupones</h3>
+				</div>
 			</div>
+			<div class="w-full flex justify-center">
+				<div  class="rounded-full  w-full max-w-[500px] flex flex-row bg-[#fff5b9] h-[120px] items-center pl-3" >
+					<a href="#" class="w-24"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb2UpJXzrtcq_yQwrZSdAdTc1e_v9pF7wXng&usqp=CAU" alt="" class=" rounded-full"></a>
+					<a href="#" class="w-24"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb2UpJXzrtcq_yQwrZSdAdTc1e_v9pF7wXng&usqp=CAU" alt="" class=" rounded-full ml-6"></a></a>
+					<a href="" class="ml-24 flex flex-row h-full items-center ">
+						<h1 class="text-3xl mb-2 text-[#fe2c4c] font-bold text">Comprar</h1> 
+						<Icon name="mdi:arrow-right" class="size-16 text-[#fe2c4c] "></Icon>
+					</a>				
+				</div>
+			</div>
+
 		</div>
 		<div>
 			<img src="/public/img/gifAliexpress.gif" alt="" class="h-56">
